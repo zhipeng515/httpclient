@@ -13,6 +13,17 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+*.VC.db
+bin/
+.vs/
+Debug/
+Debug*/
+Release/
+Release*/
+Backup/
+UpgradeLog.htm
+*.vcxproj.user
+*.vcxproj.filters
 
 # =========================
 # Operating System Files

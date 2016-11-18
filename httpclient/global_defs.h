@@ -11,7 +11,11 @@
 #define NAMESPACE_BEGIN(x)	namespace x{
 #define NAMESPACE_END(x)	}
 
-#ifdef HTTP_CLIENT_EXPORT
+#if defined HTTP_CLIENT_LIB
+#define HTTP_API
+#define HTTP_DATA
+#define HTTP_CLASS
+#elif defined HTTP_CLIENT_EXPORT
 #define HTTP_API		__declspec(dllexport)
 #define HTTP_DATA		__declspec(dllexport)
 #define HTTP_CLASS	    __declspec(dllexport)
