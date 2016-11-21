@@ -249,7 +249,7 @@ bool	ProxySocket::handShakeWithSock5Proxy()
 		int auth_length = 0;
 		auth_request->version = 0x01; 
 		auth_length ++;
-		auth_request->name_length = _proxy_config._username.length(); 
+		auth_request->name_length = (char)_proxy_config._username.length(); 
 		auth_length ++;
 		strcpy_s(auth_request->name,255,_proxy_config._username.c_str()); 
 		auth_length += _proxy_config._username.length();
